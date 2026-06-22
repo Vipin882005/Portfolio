@@ -1,0 +1,131 @@
+/* Internship Section */
+
+.internship-card {
+    background: var(--card-bg);
+    color: var(--text-color);
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+    border-left: 4px solid var(--primary-color);
+    transition: all 0.3s ease;
+}
+
+.internship-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.3);
+}
+
+.internship-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.internship-header h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+    font-size: 1.6rem;
+}
+
+.internship-duration {
+    font-size: 0.95rem;
+    color: #999;
+    font-weight: 500;
+}
+
+.internship-card h4 {
+    margin-bottom: 15px;
+    color: var(--text-color);
+    font-size: 1.2rem;
+}
+
+.internship-card p {
+    line-height: 1.8;
+    margin-bottom: 20px;
+    color: var(--text-color);
+}
+
+/* Achievements */
+
+.internship-achievements {
+    margin-top: 20px;
+}
+
+.internship-achievements h5 {
+    margin-bottom: 12px;
+    color: var(--primary-color);
+    font-size: 1rem;
+}
+
+.internship-achievements ul {
+    padding-left: 20px;
+}
+
+.internship-achievements li {
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+/* Certificate Button */
+
+.internship-actions {
+    margin-top: 25px;
+}
+
+/* Skills Section */
+
+.internship-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.internship-skills span {
+    background: rgba(59, 130, 246, 0.15);
+    color: var(--primary-color);
+    padding: 8px 16px;
+    border-radius: 25px;
+    font-size: 13.6px;
+    font-weight: 500;
+    border: 1px solid rgba(59, 130, 246, 0.25);
+    transition: all 0.3s ease;
+    cursor: default;
+}
+
+.internship-skills span:hover {
+    background: var(--primary-color);
+    color: #ffffff;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(59, 130, 246, 0.35);
+}
+
+/* Mobile Responsive */
+
+@media (max-width: 768px) {
+    .internship-card {
+        padding: 20px;
+    }
+
+    .internship-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+
+    .internship-duration {
+        margin-bottom: 10px;
+    }
+
+    .internship-skills {
+        gap: 10px;
+    }
+
+    .internship-skills span {
+        font-size: 0.85rem;
+        padding: 8px 14px;
+    }
+}
